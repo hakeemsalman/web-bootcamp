@@ -44,14 +44,33 @@ Font Properties
 - Padding
 - Border
 
+[Image](../assets/margin-padding-border.png)
 
 ### Margin
 ```css
+{
+  margin: 0px 10px 20px 30px;
+
+  /* TOP RIGHT BOTTOM LEFT (clock-wise) */
+
+  margin: 10px 20px;
+  /* top&bottom   right&left */
+
+}
 
 ```
 
 ### Padding
 ```css
+{
+  padding: 0px 10px 20px 30px;
+
+  /* TOP RIGHT BOTTOM LEFT (clock-wise) */
+
+  padding: 10px 20px;
+  /* top&bottom   right&left */
+
+}
 
 ```
 
