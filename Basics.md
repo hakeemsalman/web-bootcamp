@@ -44,3 +44,34 @@ Font Properties
 - Padding
 - Border
 
+
+### Margin
+```css
+
+```
+
+### Padding
+```css
+
+```
+
+### Border
+
+```css
+p1{
+border: 30px solid black;
+}
+
+{
+  border-width: 0px 10px 20px 30px;
+
+  /* TOP RIGHT BOTTOM LEFT (clock-wise) */
+
+  border-width: 10px 20px;
+  /* top&bottom   right&left */
+
+}
+
+```
+
+
