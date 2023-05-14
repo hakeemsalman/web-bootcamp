@@ -96,5 +96,8 @@ border: 30px solid black;
 ### Pesticide extension
 After installing extension and open a website which is live website(running on a server) then press `ctrl` to see the hover bar at the bottom.
   
-
-
+### CSS Cascade
+cascade means (you can search in google)
+but here we should know the importance of multiple rules applied on same element or tag, which rule is applied first.
+First bowser see the **External CSS** then **Internal CSS** then **Inline CSS**
+> External CSS ----> Internal CSS ----> Inline CSS
