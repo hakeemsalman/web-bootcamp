@@ -40,9 +40,10 @@ Font Properties
 ```
 
 ### Level 3
-- Margin
-- Padding
-- Border
+- [Margin](#margin)
+- [Padding](#padding)
+- [Border](#border)
+- [pesticide](#pesticide-extension)(chrome extension)
 
 ![Image](./assets/margin-padding-border.png)
 
@@ -92,5 +93,8 @@ border: 30px solid black;
 }
 
 ```
+### Pesticide extension
+After installing extension and open a website which is live website(running on a server) then press `ctrl` to see the hover bar at the bottom.
+  
 
 
