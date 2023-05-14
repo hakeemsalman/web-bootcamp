@@ -101,3 +101,17 @@ cascade means (you can search in google)
 but here we should know the importance of multiple rules applied on same element or tag, which rule is applied first.
 First bowser see the **External CSS** then **Internal CSS** then **Inline CSS**
 > External CSS ----> Internal CSS ----> Inline CSS
+  
+### Important of CSS catogory precedence rule
+1. Position
+2. Specifity
+3. Type
+4. Importance
+  
+#### 1. Position
+```css
+li{
+  color: red;
+  color: blue;
+  }
+```
