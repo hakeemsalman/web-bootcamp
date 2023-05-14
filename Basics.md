@@ -44,7 +44,7 @@ Font Properties
 - Padding
 - Border
 
-[Image](./assets/margin-padding-border.png)
+![Image](./assets/margin-padding-border.png)
 
 ### Margin
 ```css
