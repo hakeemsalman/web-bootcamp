@@ -116,6 +116,7 @@ li{
   }
 ```
 ##### 2. Specifity
+> **NOTE:** flows goes from TOP to BOTTOM. Element Selector --> Class Selector ---> Attribute Selector ---> Id Selector 
 ```html
 <li id="first-class" class="first-class" draggable>
 ```
