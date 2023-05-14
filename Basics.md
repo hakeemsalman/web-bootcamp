@@ -47,7 +47,7 @@ Font Properties
 
 ![Image](./assets/margin-padding-border.png)
 
-### Margin
+#### Margin
 ```css
 {
   margin: 0px 10px 20px 30px;
@@ -61,7 +61,7 @@ Font Properties
 
 ```
 
-### Padding
+#### Padding
 ```css
 {
   padding: 0px 10px 20px 30px;
@@ -75,7 +75,7 @@ Font Properties
 
 ```
 
-### Border
+#### Border
 
 ```css
 p1{
@@ -93,7 +93,7 @@ border: 30px solid black;
 }
 
 ```
-### Pesticide extension
+#### Pesticide extension
 After installing extension and open a website which is live website(running on a server) then press `ctrl` to see the hover bar at the bottom.
   
 ### CSS Cascade
@@ -102,16 +102,34 @@ but here we should know the importance of multiple rules applied on same element
 First bowser see the **External CSS** then **Internal CSS** then **Inline CSS**
 > External CSS ----> Internal CSS ----> Inline CSS
   
-### Important of CSS catogory precedence rule
+#### Important of CSS catogory precedence rule
 1. Position
 2. Specifity
 3. Type
 4. Importance
   
-#### 1. Position
+##### 1. Position
 ```css
 li{
   color: red;
   color: blue;
   }
+```
+##### 2. Specifity
+```html
+<li id="first-class" class="first-class" draggable>
+```
+```css
+li{     /* this one is least specific. Element Selector*/
+  color: blue;
+ }
+.first-class{
+  color: red;
+ }
+ li[draggable] {
+  color: purple; 
+ }
+ #first-class{
+  color: orange;
+ }
 ```
