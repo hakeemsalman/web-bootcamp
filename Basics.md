@@ -134,3 +134,15 @@ li{     /* this one is least specific. Element Selector*/
   color: orange;
  }
 ```
+##### 3. Type
+```html
+  <link rel="stylesheet" href="./style.css">
+  <style></style>
+  <h1 style=" ">Hello</h1>
+```
+  
+##### 4. Importance
+```css
+  color: red;
+  color: green !important;
+```
