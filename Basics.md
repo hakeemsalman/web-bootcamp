@@ -146,3 +146,140 @@ li{     /* this one is least specific. Element Selector*/
   color: red;
   color: green !important;
 ```
+#### Combining CSS 
+```html
+<p>Yellow text</p>
+<div class="box inner-box">
+	<p>White Text</p>
+</div>
+
+```
+```css
+p{
+	color: Yellor;
+}
+.inner-box p{
+	color: white;
+}
+```
+
+##### 1. Group rule
+ Group = Apply to both selectors
+```css
+selector, selector{
+	color: bluevoilet;
+}
+```
+##### 2. Child rule
+It's only work only ONE child element tag, NOT for grand child.
+Works on Only One level deep. 
+```css
+selector > selector{
+	color: firebrick;
+}
+```
+selector `>` selector means parent `>` child
+
+##### 3. Descendant
+
+Descendant = Apply to descendant of a left side
+```css
+selector1 selector2{
+	color: blue;
+}
+```
+selector1 is An Ancestor selector and selector2 is Descendant selector
+- Example
+
+```html
+<div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+  </div>
+```
+```css
+.box li{
+    color: blue;
+}
+```
+##### 4. Chaining
+Chaining = Apply where ALL selectors are true
+
+```css
+selector1selector2{
+	color: seagreen;
+}
+```
+![IMAGE](../assets/combine-selector-1.png)
+
+##### 5. Combining Combiners
+```css
+selector1 selector2selector3{
+	font-size: 0.5rem;
+}
+```
+- example - change the font-size of `p` element
+
+```html
+<div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+  </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+``` 
+```css
+
+.box p.done{ /* WRONG*/
+	font-size: 0.5rem;
+}
+
+ul p.done{    /*CORRECT*/
+    font-size: 0.5rem;
+}
+```
+
+#### CSS Positioning
+1. [Static](#1.-static)
+2. [Relative](2.-relative)
+3. [Absolute](3.-absolute)
+4. [Fixed]()
+
+You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
+
+![IMAGE](../assets/css-positioning-1.png)
+
+##### 1. Static
+
+![IMAGE](../assets/css-static-pos-1.png)
+
+##### 2. Relative
+
+![IMAGE](../assets/css-relative-pos-1.png)
+
+##### 3. Absolute
+
+![IMAGE](../assets/css-absolute-pos-1.png)
+
+> NOTE: If `position: relative` is NOT found in Ancestors element then this descendant element will move to TOP-LEFT corner.
+
+- z-index is change order of position in css in z-axis
+```css
+ z-index: 0; /*default value*/
+ z-index: -1; /*change the order from Top to Bottom*/
+```
+
+##### 4. Fixed
+
+![IMAGE](../assets/css-fixed-pos-1.png)
+
