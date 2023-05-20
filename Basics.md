@@ -96,7 +96,9 @@ border: 30px solid black;
 #### Pesticide extension
 After installing extension and open a website which is live website(running on a server) then press `ctrl` to see the hover bar at the bottom.
   
+	
 ### CSS Cascade
+	
 cascade means (you can search in google)
 but here we should know the importance of multiple rules applied on same element or tag, which rule is applied first.
 First bowser see the **External CSS** then **Internal CSS** then **Inline CSS**
@@ -164,6 +166,7 @@ p{
 ```
 
 ##### 1. Group rule
+	
  Group = Apply to both selectors
 ```css
 selector, selector{
@@ -171,6 +174,7 @@ selector, selector{
 }
 ```
 ##### 2. Child rule
+	
 It's only work only ONE child element tag, NOT for grand child.
 Works on Only One level deep. 
 ```css
@@ -214,7 +218,7 @@ selector1selector2{
 	color: seagreen;
 }
 ```
-![IMAGE](../assets/combine-selector-1.png)
+![IMAGE](./assets/combine-selector-1.png)
 
 ##### 5. Combining Combiners
 ```css
@@ -257,19 +261,19 @@ ul p.done{    /*CORRECT*/
 
 You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
-![IMAGE](../assets/css-positioning-1.png)
+![IMAGE](./assets/css-positioning-1.png)
 
 ##### 1. Static
 
-![IMAGE](../assets/css-static-pos-1.png)
+![IMAGE](./assets/css-static-pos-1.png)
 
 ##### 2. Relative
 
-![IMAGE](../assets/css-relative-pos-1.png)
+![IMAGE](./assets/css-relative-pos-1.png)
 
 ##### 3. Absolute
 
-![IMAGE](../assets/css-absolute-pos-1.png)
+![IMAGE](./assets/css-absolute-pos-1.png)
 
 > NOTE: If `position: relative` is NOT found in Ancestors element then this descendant element will move to TOP-LEFT corner.
 
@@ -281,5 +285,5 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
 ##### 4. Fixed
 
-![IMAGE](../assets/css-fixed-pos-1.png)
+![IMAGE](./assets/css-fixed-pos-1.png)
 
