@@ -287,3 +287,26 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
 ![IMAGE](./assets/css-fixed-pos-1.png)
 
+## Advanced CSS
+
+1. Block
+2. Inline
+3. Inline-Block
+
+
+
+### CSS Display
+
+1. Media Queries
+2. CSS Grid
+3. CSS Flexbox
+4. External Frameworks
+
+#### Media Queries
+
+```css
+@media (max-width: 600px){
+    /* CSS  for screens below or equal to 
+    600px  */
+}
+```
