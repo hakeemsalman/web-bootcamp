@@ -510,3 +510,14 @@ These axis are important for length and height configuration in css
 ##### Assignment Video
 
 ![](./assets/flexbox/output.gif)
+
+
+## Flex Layout
+
+1. Align
+2. Justify
+3. Wrap
+
+Order --> `order: 0;` every flex box child item default order value is `0` i.e, `zero`. To change the order of the item you need to assign a order.
+
+![](./assets/flexbox/css-flexbox-layout-order.png)
