@@ -324,3 +324,48 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
 
 > Bootstrap is built on Flexbox 
+
+	
+## Media query
+
+```css
+@media (max-width: 600px){
+    h1{
+        font-size: 15px;
+    }
+}
+```
+![IMAGE](./assets/css-media-query-1.png)
+
+```css
+@media (mix-width: 600px) and (max-width: 900px){
+    /* Styles for screen between 600 and 900px */
+}
+```
+![IMAGE](./assets/css-media-query-2.png)
+
+
+> Code practice
+
+```css
+@media (min-width:1601px){
+      body{
+        background-color: seagreen;
+      }
+    }
+    @media (min-width:1201px) and (max-width:1600px){
+      body{
+        background-color: limegreen;
+      }
+    }
+    @media (min-width:481px) and (max-width:1200px){
+      body{
+        background-color: powderblue;
+      }
+    }
+    @media (min-width:319px) and (max-width:480px){
+      body{
+        background-color: lightsalmon;
+      }
+    }
+```
