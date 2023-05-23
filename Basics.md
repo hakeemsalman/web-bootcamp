@@ -507,4 +507,6 @@ If `flow-direction` is `column` then Horizontal line is *cross-axis* and vertica
 
 These axis are important for length and height configuration in css
 
+##### Assignment Video
 
+![](./assets/flexbox/output.gif)
