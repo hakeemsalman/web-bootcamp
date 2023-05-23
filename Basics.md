@@ -369,3 +369,78 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
       }
     }
 ```
+
+## Flexbox
+
+we have tables to show data in row and column but it is specifically tabular data.
+
+```html
+<table>
+    <tr class="row">
+      <td class="col1">Lorem ipsum dolor sit amet consectetur</td>
+      <td class="col2">Lorem ipsum dolor</td>
+      <td class="col3">Lorem ipsum dolor sit amet consecteturit amet consectetur</td>
+    </tr>
+  </table>
+```
+```css
+.col1{
+  width: 25%;
+}
+.col2{
+  width: 25%;
+}
+.col3{
+  width: 40%;
+}
+```
+
+![IMAGE](./assets/css-flexbox-table.png)
+
+> And as you'll see, there are much, much better tools to do this nowadays.
+
+>So you're not left in the dark.
+
+>After people stopped using tables for layout, they started using what we've explored previously, which is using the display property.
+
+![IMAGE](./assets/css-flexbox-inline-block.png)
+
+> But this also a lengthy and pain full process to fix this
+
+![IMAGE](./assets/css-flexbox-positions.png)
+
+> This is not a responsive modern website tool.  we have **Flexbox**
+
+![IMAGE](./assets/css-flexbox-flexbox.png)
+
+![IMAGE](./assets/css-flexbox-1.png)
+
+
+#### How to USE Flex
+
+Just write `div` with `container` **class**  
+and write css `display: flex;`
+```html
+ <div class="container">
+    <div class="one"><p>...</p></div>
+    <div class="two"><p>...</p></div>
+    <div class="three"><p>...</p></div>
+  </div>
+```
+
+```css
+.container{
+  display: flex;
+  gap: 10px;
+}
+```
+
+![IMAGE](./assets/css-flexbox-2.png)
+
+
+![IMAGE](./assets/css-flexbox-3.png)
+
+![IMAGE](./assets/css-flexbox-4.png)
+
+> There are two different version of flexbox to use as per your requirements
+
