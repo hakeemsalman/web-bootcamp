@@ -444,3 +444,67 @@ and write css `display: flex;`
 
 > There are two different version of flexbox to use as per your requirements
 
+
+
+### Assignment
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <style>
+    p {
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .container {
+      display: flex;
+      gap: 1rem;
+      padding: 10px;
+      background-color: gold;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>Page Layout Methods</p>
+
+    <li><a href="./html-table.html">HTML Table</a></li>
+    <li><a href="./inline-block.html">Inline-Block</li>
+    <li><a href="./absolute-position.html">Absolute Positioning</li>
+    <li><a href="./float.html">Float</li>
+    <li><a href="./flex.html">Flexbox</li>
+
+  </div>
+</body>
+
+</html>
+```
+
+## Flex Direction
+
+Default flow-direction is `row` 
+
+Here we have Two axis  
+1. main-axis
+2. cross-axis
+
+If `flow-direction` is `row` then the Horizontal line is *main-axis* and vertical line is *cross-axis*
+
+If `flow-direction` is `column` then Horizontal line is *cross-axis* and vertical line is *main-axis*
+
+These axis are important for length and height configuration in css
+
+
