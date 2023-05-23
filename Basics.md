@@ -310,3 +310,17 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
     600px  */
 }
 ```
+#### CSS Grid
+
+![IMAGE](./assets/css-glipmse-grid.png)
+
+#### CSS Flexbox
+
+![IMAGE](./assets/css-glipmse-flexbox.png)
+
+#### Bootstrap framework
+
+![IMAGE](./assets/css-glipmse-bootstrap.png)
+
+
+> Bootstrap is built on Flexbox 
