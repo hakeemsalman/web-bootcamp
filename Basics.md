@@ -424,7 +424,11 @@ You can checkout this [LINK](https://appbrewery.github.io/css-display/)
 
 Wrapping text using float and clear
 
-
+![](./assets/float/float-1 (1).png)
+![](./assets/float/float-1 (2).png)
+![](./assets/float/float-1 (3).png)
+![](./assets/float/float-1 (4).png)
+![](./assets/float/float-1 (5).png)
 
 ### CSS Display
 
