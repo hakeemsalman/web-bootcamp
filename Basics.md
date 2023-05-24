@@ -368,7 +368,7 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 3. Inline
 4. Span
 
-![IMAGE](../assets/css-display-properties.png)
+![IMAGE](./assets/css-display-properties.png)
 
 ```html
 
