@@ -287,11 +287,70 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
 ![IMAGE](./assets/css-fixed-pos-1.png)
 
-## Advanced CSS
+# Advanced CSS
+
+## CSS Display Property
 
 1. Block
-2. Inline
-3. Inline-Block
+2. Inline-Block
+3. Inline
+4. Span
+
+![IMAGE](../assets/css-display-properties.png)
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Display Property Example</title>
+  <style>
+    p {
+      color: white;
+    }
+
+    .red {
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+
+    .green {
+      display: inline;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+
+    .blue {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>CSS Display Property</h1>
+  <p class="red">Red Paragraph </p>
+  <p class="green">Green Paragraph</p>
+  <p class="blue">Blue Paragraph</p>
+</body>
+
+</html>
+```
+
+> NOTE: you CANNOT set Height and Width to Inline property.
+
+You can checkout this [LINK](https://appbrewery.github.io/css-display/)
+
+
+## CSS Float
+
+Wrapping text using float and clear
 
 
 
