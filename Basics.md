@@ -287,6 +287,78 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
 ![IMAGE](./assets/css-fixed-pos-1.png)
 
+
+## CSS Flag
+
+> create a flag of laos
+
+![IMAGE](../assets/css-flag-of-laos.png)
+
+```html
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag {
+      width: 900px;
+      height: 600px;
+      position: relative;
+      background-color: #CE1126;
+
+    }
+
+    .flag > div {
+      background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+    }
+
+    .flag > div > div {
+      background-color: white;
+      position: absolute;
+
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      font-size: 5rem;
+      color: white;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flag>div div p {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+```
+	
+	
+	
 # Advanced CSS
 
 ## CSS Display Property
