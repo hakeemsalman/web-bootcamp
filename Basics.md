@@ -292,7 +292,7 @@ You can practice in this [LINK](https://appbrewery.github.io/css-positioning/)
 
 > create a flag of laos
 
-![IMAGE](../assets/css-flag-of-laos.png)
+![IMAGE](./assets/css-flag-of-laos.png)
 
 ```html
 !DOCTYPE html>
