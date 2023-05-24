@@ -424,11 +424,12 @@ You can checkout this [LINK](https://appbrewery.github.io/css-display/)
 
 Wrapping text using float and clear
 
-![](./assets/float/float-1 (1).png)
-![](./assets/float/float-1 (2).png)
-![](./assets/float/float-1 (3).png)
-![](./assets/float/float-1 (4).png)
-![](./assets/float/float-1 (5).png)
+![image](./assets/float/float-1.png)  
+![iamge](./assets/float/float-2.png)  
+![image](./assets/float/float-3.png)  
+![image](./assets/float/float-4.png)  
+![image](./assets/float/float-5.png)  
+![image](./assets/float/float-6.png) 
 
 ### CSS Display
 
@@ -656,3 +657,15 @@ These axis are important for length and height configuration in css
 Order --> `order: 0;` every flex box child item default order value is `0` i.e, `zero`. To change the order of the item you need to assign a order.
 
 ![](./assets/flexbox/css-flexbox-layout-order.png)
+
+
+```css
+Flex-wrap : nowarp;
+```
+
+
+
+
+
+
+
