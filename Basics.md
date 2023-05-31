@@ -708,7 +708,6 @@ This wrap is Set on parent container.
 
 We have `three` values in flex-wrap in css property.
 
-
 ```css
 .container {
   flex-wrap: nowrap;
@@ -719,12 +718,16 @@ We have `three` values in flex-wrap in css property.
 
 > https://appbrewery.github.io/flex-layout/
 
-
-
 ### 2 Justify content
 
 This is also Set on parent container.
 
-
-
-
+```css
+.container {
+  justify-content: start;
+  /* 
+  justify-content: end;
+  justify-content: center;
+  */
+}
+```
