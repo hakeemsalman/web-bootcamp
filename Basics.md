@@ -774,4 +774,15 @@ Froggy GAME [https://appbrewery.github.io/flexboxfroggy/](https://appbrewery.git
 Complete this game task in Intermediate Level
 
 
+## Flex sizing
+
+1. Shrinking
+2. Growing
+
+Priority List
+
+> Content width < Width < flex-basis < min-width/max-width
+
+Here first of all, browser will see the `min-width/max-width` property, if not assigned then goes to `flex-basis` and so on.
+
 
