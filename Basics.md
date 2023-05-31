@@ -702,9 +702,29 @@ Order --> `order: 0;` every flex box child item default order value is `0` i.e, 
 
 ![](./assets/flexbox/css-flexbox-layout-3.png)
 
+### 1 Wrap
+
+This wrap is Set on parent container.
+
+We have `three` values in flex-wrap in css property.
+
+
 ```css
 .container {
-  flex-wrap: nowarp;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse */
 }
 ```
+
+> https://appbrewery.github.io/flex-layout/
+
+
+
+### 2 Justify content
+
+This is also Set on parent container.
+
+
+
+
