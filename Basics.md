@@ -755,3 +755,23 @@ NOTE: To work `align-items` on flex in container, you should maintain height. Be
 ```
 
 TRICKS - [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+### 4 Align contents
+
+```css
+.container{
+  align-content: flex-start;
+  height: 70vh;
+}
+```
+
+NOTE: Here `align-content` works only on `flex-wrap: wrap`. If you use `nowrap`, it'll not work.
+
+##### Assignment
+
+Froggy GAME [https://appbrewery.github.io/flexboxfroggy/](https://appbrewery.github.io/flexboxfroggy/)
+
+Complete this game task in Intermediate Level
+
+
+
