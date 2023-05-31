@@ -741,11 +741,11 @@ This is also Set on parent container.
 
 `space-evenly` where each of the gaps are equal.
 
-### Align Items
+### 3 Align Items
 
 ![](./assets/flexbox/css-flex-layout-align-1.png)
 
-> NOTE: To work `align-items` on flex in container, you should maintain height. Because, `justify-content` work on **_main-axis_**(horizontal-axis) and `align-items` work on **_cross-axis_**(vertical-axis).
+NOTE: To work `align-items` on flex in container, you should maintain height. Because, `justify-content` work on **_main-axis_**(horizontal-axis) and `align-items` work on **_cross-axis_**(vertical-axis).
 
 ```css
 .container {
@@ -754,4 +754,4 @@ This is also Set on parent container.
 }
 ```
 
-> TRICKS - [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+TRICKS - [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
