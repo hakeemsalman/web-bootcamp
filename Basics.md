@@ -728,6 +728,30 @@ This is also Set on parent container.
   /* 
   justify-content: end;
   justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+
   */
 }
 ```
+
+`space-between` stuck to edges of the container.
+
+`space-around` makes sure that this gap between the left and the right. The center add up to the space between each of the items
+
+`space-evenly` where each of the gaps are equal.
+
+### Align Items
+
+![](./assets/flexbox/css-flex-layout-align-1.png)
+
+> NOTE: To work `align-items` on flex in container, you should maintain height. Because, `justify-content` work on **_main-axis_**(horizontal-axis) and `align-items` work on **_cross-axis_**(vertical-axis).
+
+```css
+.container {
+  align-items: flex-start;
+  height: 70vh; /* vh => viewport height means Display monitor height of the user   */
+}
+```
+
+> TRICKS - [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
