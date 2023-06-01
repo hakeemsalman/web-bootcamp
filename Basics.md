@@ -585,7 +585,7 @@ we have tables to show data in row and column but it is specifically tabular dat
 #### How to USE Flex
 
 Just write `div` with `container` **class**  
-and write css `display: flex;`
+and write css `display: flex;` in container
 
 ```html
 <div class="container">
@@ -784,5 +784,8 @@ Priority List
 > Content width < Width < flex-basis < min-width/max-width
 
 Here first of all, browser will see the `min-width/max-width` property, if not assigned then goes to `flex-basis` and so on.
+
+
+
 
 
