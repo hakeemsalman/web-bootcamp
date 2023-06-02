@@ -841,8 +841,6 @@ Here what happen is the width is 100px of `flex-basis` value, but if you shrink 
 ![](./assets/flexbox/flex-grow-shrink-5.png)
 ![](./assets/flexbox/flex-grow-shrink-6.png)
 
-
-
 #### Both Shrink and Grow
 
 If both are applied, then `flex-basis` is ignored.
@@ -854,10 +852,41 @@ If both are applied, then `flex-basis` is ignored.
 }
 .flex-container {
   flex-basis: 100px;
-  flex-grow: 1;  /* max-width  */
+  flex-grow: 1; /* max-width  */
   flex-shrink: 1; /* min-width  */
 }
-
 ```
 
 ![](./assets/flexbox/flex-grow-shrink-7.png)
+
+
+---
+
+
+Here another trick to use `flex`
+
+```css
+.container {
+  display: flex;
+  gap: 10px;
+}
+.flex-container {
+  /* flex-basis: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;  */
+
+  flex: 1 1 0; /* grow shrink basis  */
+  /* flex: 1;   it means  same as above values   1 1 0   */
+}
+```
+
+
+#### Exercise
+
+> [https://appbrewery.github.io/flexbox-sizing-exercise/](https://appbrewery.github.io/flexbox-sizing-exercise/) 
+
+
+
+---
+
+
