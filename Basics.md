@@ -759,7 +759,7 @@ TRICKS - [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-t
 ### 4 Align contents
 
 ```css
-.container{
+.container {
   align-content: flex-start;
   height: 70vh;
 }
@@ -773,7 +773,6 @@ Froggy GAME [https://appbrewery.github.io/flexboxfroggy/](https://appbrewery.git
 
 Complete this game task in Intermediate Level
 
-
 ## Flex sizing
 
 1. Shrinking
@@ -785,7 +784,38 @@ Priority List
 
 Here first of all, browser will see the `min-width/max-width` property, if not assigned then goes to `flex-basis` and so on.
 
+Suppose here an example
 
+```css
+.container {
+  display: flex;
+  gap: 10px;
+}
+.flex-container {
+  flex-basis: 100px;
+  flex-grow: 0;
+  flex-grow: 0;
+}
+```
 
+![](./assets/flexbox/flex-grow-shrink-1.png)
+![](./assets/flexbox/flex-grow-shrink-2.png)
 
+Here you can see above images, it does not at all reacting when browser is shrinking. Width is not changing of any boxes, it same as before.
 
+To react on the browser shinking and growing, here is the code below,
+
+```css
+.container {
+  display: flex;
+  gap: 10px;
+}
+.flex-container {
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-grow: 0;
+}
+```
+
+![](./assets/flexbox/flex-grow-shrink-3.png)
+![](./assets/flexbox/flex-grow-shrink-4.png)
