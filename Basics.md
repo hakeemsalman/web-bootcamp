@@ -842,3 +842,22 @@ Here what happen is the width is 100px of `flex-basis` value, but if you shrink 
 ![](./assets/flexbox/flex-grow-shrink-6.png)
 
 
+
+#### Both Shrink and Grow
+
+If both are applied, then `flex-basis` is ignored.
+
+```css
+.container {
+  display: flex;
+  gap: 10px;
+}
+.flex-container {
+  flex-basis: 100px;
+  flex-grow: 1;  /* max-width  */
+  flex-shrink: 1; /* min-width  */
+}
+
+```
+
+![](./assets/flexbox/flex-grow-shrink-7.png)
