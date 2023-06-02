@@ -794,7 +794,7 @@ Suppose here an example
 .flex-container {
   flex-basis: 100px;
   flex-grow: 0;
-  flex-grow: 0;
+  flex-shrink: 0;
 }
 ```
 
@@ -802,6 +802,8 @@ Suppose here an example
 ![](./assets/flexbox/flex-grow-shrink-2.png)
 
 Here you can see above images, it does not at all reacting when browser is shrinking. Width is not changing of any boxes, it same as before.
+
+#### Grow
 
 To react on the browser shinking and growing, here is the code below,
 
@@ -813,9 +815,30 @@ To react on the browser shinking and growing, here is the code below,
 .flex-container {
   flex-basis: 100px;
   flex-grow: 1;
-  flex-grow: 0;
+  flex-shrink: 0;
 }
 ```
 
 ![](./assets/flexbox/flex-grow-shrink-3.png)
 ![](./assets/flexbox/flex-grow-shrink-4.png)
+
+#### Shrink
+
+```css
+.container {
+  display: flex;
+  gap: 10px;
+}
+.flex-container {
+  flex-basis: 100px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+```
+
+Here what happen is the width is 100px of `flex-basis` value, but if you shrink the page, it shrinks the box upto the `min-width` but here we did not provide `min-width` of flex-items. So it takes `content` width of the flex-box.
+
+![](./assets/flexbox/flex-grow-shrink-5.png)
+![](./assets/flexbox/flex-grow-shrink-6.png)
+
+
