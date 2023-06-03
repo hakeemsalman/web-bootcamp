@@ -47,6 +47,18 @@ Font Properties
   </body>
 </html>
 ```
+  
+### CSS Properties
+
+CSS Colors
+
+CSS colors links
+
+[https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/](https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/)
+  
+[https://colorhunt.co/](https://colorhunt.co/)
+  
+[https://developer.mozilla.org/en-US/docs/Web/CSS/named-color](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color)
 
 ### Level 3
 
