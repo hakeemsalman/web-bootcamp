@@ -1,13 +1,11 @@
 # Grid
 
-> Flexbox  
+> Flexbox
 
-![flexox](./assets/grid/flexbox-vs-grid.png | width=100)
+<img src="./assets/grid/flexbox-vs-grid.png" alt="flexbox" align="left" height="48" width="48" >
 
 > Grid
 
-![](./assets/grid/flexbox-vs-grid-2.png)
+<img src="./assets/grid/flexbox-vs-grid-2.png" alt="flexbox" align="left" height="48" width="48" >
 
 Now here Flexbox work on 1-Dimensional and Grid works on 2-Dimensional as shown above pic
-
-
