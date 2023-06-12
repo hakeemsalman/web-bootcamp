@@ -286,4 +286,56 @@ Grid Common terms
 <img src="./assets/grid/grid-layout-1.png" alt="flexbox" align="center" width="400px" >
 <img src="./assets/grid/grid-layout-1-output.png" alt="flexbox" align="center" width="400px" >
 
+### Exercise
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Placement</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        height: 100vh;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .item {
+        font-size: 5rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blueviolet;
+        /* TODO: Use Flexbox to align the text to the center horizontally and vertically. 
+      See goal1 image.
+      */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item cowboy">🤠</div>
+      <div class="item astronaut">👨‍🚀</div>
+      <div class="item book">📖</div>
+    </div>
+  </body>
+</html>
+```
+
+```css
+/*                SOLUTION */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
