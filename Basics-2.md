@@ -1,5 +1,7 @@
 # Grid
 
+## 1 Display Grid
+
 > Flexbox
 
 <img src="./assets/grid/flexbox-vs-grid.png" alt="flexbox" align="center" width="400px" >
@@ -157,3 +159,29 @@ Add style code inside above html to work
   }
 </style>
 ```
+
+## 2 Grid sizing
+
+<img src="./assets/grid/grid-size-1.png" alt="flexbox" align="center" width="400px" >
+
+### You can write alternative as shown below
+
+```css
+/*        NOT RESPONSIVE */
+.container {
+  display: grid;
+  grid-template: 100px 200px / 400px 800px; /*rows / columns  */
+}
+```
+
+```css
+.container {
+  display: grid;
+  grid-template-rows: 100px auto;
+  grid-template-columns: 200px auto;
+}
+```
+
+Link of Grid sizing website in github
+
+- [https://appbrewery.github.io/grid-sizing/](https://appbrewery.github.io/grid-sizing/)
