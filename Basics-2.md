@@ -2,10 +2,10 @@
 
 > Flexbox
 
-<img src="./assets/grid/flexbox-vs-grid.png" alt="flexbox" align="left" height="48" width="48" >
+<img src="./assets/grid/flexbox-vs-grid.png" alt="flexbox"  width="100px" >
 
 > Grid
 
-<img src="./assets/grid/flexbox-vs-grid-2.png" alt="flexbox" align="left" height="48" width="48" >
+<img src="./assets/grid/flexbox-vs-grid-2.png" alt="flexbox"  width="100px" >
 
 Now here Flexbox work on 1-Dimensional and Grid works on 2-Dimensional as shown above pic
