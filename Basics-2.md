@@ -182,6 +182,108 @@ Add style code inside above html to work
 }
 ```
 
-Link of Grid sizing website in github
+Link for the Grid sizing website in github
 
 - [https://appbrewery.github.io/grid-sizing/](https://appbrewery.github.io/grid-sizing/)
+
+> > [**_columns : Horizontal_**] - / - [**_rows : Vertical_**]. In fractions _Horizontal_ can stretch upto width of the browser but where as the row(_vertical_) stretch upto the content inside of grid
+
+### minmax(min-value,max-value)
+
+```html
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+</div>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: 200px 400px;
+    grid-template-columns: 200px minmax(400px, 800px); /*min-value:400px , max-value:800px  */
+  }
+</style>
+```
+
+### repeat(repeat-value, size-value)
+
+```html
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+</div>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(2, 400px);
+  }
+</style>
+```
+
+<img src="./assets/grid/grid-size-2.png" alt="flexbox" align="center" width="400px" >
+
+### auto sizing even not mentioned in css for extra div based on there size of content
+
+<img src="./assets/grid/grid-size-3.png" alt="flexbox" align="center" width="400px" >
+
+### auto sizing even not mentioned in css for extra div, _grid-auto-rows_
+
+```html
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+</div>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: 300px;
+  }
+</style>
+```
+
+### exercise
+
+- [https://appbrewery.github.io/grid-sizing/test.html](https://appbrewery.github.io/grid-sizing/test.html)
+
+- SOLUTION
+
+```CSS
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 400px minmax(200px,500px);
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-auto-rows: 50px;
+}
+```
+
+### Grid Item Placement
+
+How to layout items in the grid
+
+Grid Common terms
+
+- Lines
+- Tracks
+- Cells
+- Container
+- Items
+- Gap
+- Row
+- Column
+
+<img src="./assets/grid/grid-layout-1.png" alt="flexbox" align="center" width="400px" >
+<img src="./assets/grid/grid-layout-1-output.png" alt="flexbox" align="center" width="400px" >
+
+
