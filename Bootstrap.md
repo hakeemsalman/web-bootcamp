@@ -78,13 +78,17 @@ Below code is an Exercise, and Bootstrap code to achieve as Goal shown.
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap</title>
+    <!-- TODO 1: Add the Bootstrap link here. -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <!-- TODO 1: Add the Bootstrap link here. -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- we can use STYLESHEET but it should be BELOW the CDN link -->
+
     <style>
       /* TODO 4: Use flexbox to center the card in the vertical and horizontal center. */
       .flex-container {
@@ -115,3 +119,5 @@ Below code is an Exercise, and Bootstrap code to achieve as Goal shown.
   </body>
 </html>
 ```
+
+## Bootstrap 12 Column Layout system
