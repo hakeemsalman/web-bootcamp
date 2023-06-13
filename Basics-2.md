@@ -370,6 +370,8 @@ we can see the Tracks in Chrome Developer Tools CDT
 
 Open **_CDT_** -> click on `grid` element tag -> click on `layout` tab -> In **Overlay Display Settings** -> select checkbox `show track sizes`
 
+### Grid Column & Row
+
 If you see Demo1.html code and in style section click this arrow &rarr; of `grid-column`
 
 ```css
@@ -381,3 +383,17 @@ If you see Demo1.html code and in style section click this arrow &rarr; of `grid
   */
 }
 ```
+
+we can use `order: <numberValue>`
+
+```css
+.astronaut {
+  order: 1;
+}
+```
+
+### Grid Exercise 2 (pending)
+
+### Grid Rows (pending)
+
+### Grid Project (pending)
