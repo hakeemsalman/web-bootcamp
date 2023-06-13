@@ -339,3 +339,45 @@ Grid Common terms
   align-items: center;
 }
 ```
+
+### Span Demo 1
+
+Suppose we want to increase cowboy grid then we can use,
+
+```html
+<html>
+  <head>
+    <style>
+      .cowboy {
+        background-color: #00b9ff;
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item cowboy">🤠</div>
+      <div class="item astronaut">👨‍🚀</div>
+      <div class="item book">📖</div>
+    </div>
+  </body>
+</html>
+```
+
+<img src="./assets/grid/grid-span-1.png" alt="flexbox"  width="400px" >
+
+we can see the Tracks in Chrome Developer Tools CDT
+
+Open **_CDT_** -> click on `grid` element tag -> click on `layout` tab -> In **Overlay Display Settings** -> select checkbox `show track sizes`
+
+If you see Demo1.html code and in style section click this arrow &rarr; of `grid-column`
+
+```css
+.cowboy {
+  grid-column: span 2;
+  /* 
+  grid-column-start: auto 2;
+  grid-column-end: auto;
+  */
+}
+```
