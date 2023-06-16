@@ -121,3 +121,97 @@ Below code is an Exercise, and Bootstrap code to achieve as Goal shown.
 ```
 
 ## Bootstrap 12 Column Layout system
+
+12 column containes `3` components
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <div class="col">Hello</div>
+    <!-- ...   upto 12 column -->
+  </div>
+</div>
+```
+
+![bootstrap.png](./assets/bootstrap/bootstrap.png)
+
+![bootstrap.png](./assets/bootstrap/bootstrap-1.png)
+
+### Boostrap container
+
+![bootstrap.png](./assets/bootstrap/bootstrap-2.png)
+
+> NOTE: Those values is refering to the `viewport` width means size of screen.
+
+### Size column
+
+![bootstrap.png](./assets/bootstrap/bootstrap-3.png)
+
+Instead of writing class of name containers. We can write `col` names like `col-2 col-4 col-6 ....` to adjust width of column based on number
+
+![bootstrap.png](./assets/bootstrap/bootstrap-4.png)
+
+### Bootstrap Breakpoints
+
+![bootstrap.png](./assets/bootstrap/bootstrap-5.png)
+
+Breakpoints - google it :stuck_out_tongue_winking_eye:
+
+> NOTE: when we are using Breakpoints, we don't really need `@media()` queries.
+
+If we are using `col-sm-2` means the Dimensions are lie between `>=576px  and <=768px`.
+
+![bootstrap.png](./assets/bootstrap/bootstrap-6.png)
+
+![bootstrap.png](./assets/bootstrap/bootstrap-7.png)
+
+> Note here, if size is `<=576px` then column size is `100%`, means default value is `col` i.e, `100% width of viewport`
+
+![bootstrap.png](./assets/bootstrap/bootstrap-8.png)
+
+#### Multiple Breakpoints
+
+![bootstrap.png](./assets/bootstrap/bootstrap-9.png)
+![bootstrap.png](./assets/bootstrap/bootstrap-10.png)
+![bootstrap.png](./assets/bootstrap/bootstrap-11.png)
+![bootstrap.png](./assets/bootstrap/bootstrap-12.png)
+![bootstrap.png](./assets/bootstrap/bootstrap-13.png)
+
+#### Exercise
+
+[https://yuangela.com/bootstrap-layout/](https://yuangela.com/bootstrap-layout/)
+
+Exercise 1 : Solution
+
+```html
+<div class="row">
+  <div class="col-xl">50% desktop, 100% mobile</div>
+  <div class="col-xl">50% desktop, 100% mobile</div>
+</div>
+```
+
+Exercise 2 : Solution
+
+```html
+<div class="row">
+  <div class="col-lg-6">Column 1</div>
+  <div class="col-sm">Column 2</div>
+  <div class="col-sm">Column 3</div>
+</div>
+```
+
+Exercise 3 : Solution
+
+```html
+<div class="row">
+  <div class="col-xl-2 col-lg-4 col-md-6">Column 1</div>
+  <div class="col-xl col-lg col-md">Column 2</div>
+</div>
+```
