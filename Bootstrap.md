@@ -191,27 +191,97 @@ If we are using `col-sm-2` means the Dimensions are lie between `>=576px  and <=
 Exercise 1 : Solution
 
 ```html
+<!-- My code -->
 <div class="row">
   <div class="col-xl">50% desktop, 100% mobile</div>
   <div class="col-xl">50% desktop, 100% mobile</div>
+</div>
+
+<!-- Angela code -->
+<div class="row">
+  <div class="col-xl-6">50% desktop, 100% mobile</div>
+  <div class="col-xl-6">50% desktop, 100% mobile</div>
 </div>
 ```
 
 Exercise 2 : Solution
 
 ```html
+<!-- My code -->
 <div class="row">
   <div class="col-lg-6">Column 1</div>
   <div class="col-sm">Column 2</div>
   <div class="col-sm">Column 3</div>
+</div>
+
+<!-- Angela code -->
+<div class="row">
+  <div class="col-lg-6 col-sm-12 col-10">Column 1</div>
+  <div class="col-lg-3 col-sm-6 col-10">Column 2</div>
+  <div class="col-lg-3 col-sm-6 col-10">Column 3</div>
 </div>
 ```
 
 Exercise 3 : Solution
 
 ```html
+<!-- My code -->
 <div class="row">
   <div class="col-xl-2 col-lg-4 col-md-6">Column 1</div>
   <div class="col-xl col-lg col-md">Column 2</div>
 </div>
+
+<!-- Angela code -->
+<div class="row">
+  <div class="col-xxl-1 col-xl-2 col-lg-4 col-md-6">Column 1</div>
+  <div class="col-xxl-11 col-xl-10 col-lg-8 col-md-6">Column 2</div>
+</div>
+```
+
+### Bootstrap Components
+
+1. Apply `SUCCESS` button in html anywhere using only bootstrap. [Click Here for Docs button](https://getbootstrap.com/docs/5.3/components/buttons/)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+
+  <body></body>
+</html>
+```
+
+SOLUTION
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <button type="button" class="btn btn-success">Success</button>
+  </body>
+</html>
 ```
