@@ -268,7 +268,7 @@ Link for the Grid sizing website in github
 }
 ```
 
-### Grid Item Placement
+## Grid Item Placement
 
 How to layout items in the grid
 
@@ -283,7 +283,10 @@ Grid Common terms
 - Row
 - Column
 
+<img src="./assets/grid/grid-concepts.svg" alt="flexbox" align="center" width="400px" >  
+
 <img src="./assets/grid/grid-layout-1.png" alt="flexbox" align="center" width="400px" >
+
 <img src="./assets/grid/grid-layout-1-output.png" alt="flexbox" align="center" width="400px" >
 
 ### Exercise
@@ -372,7 +375,7 @@ Open **_CDT_** -> click on `grid` element tag -> click on `layout` tab -> In **O
 
 ### Grid Column & Row
 
-If you see Demo1.html code and in style section click this arrow &rarr; of `grid-column`
+If you see Demo1.html [Click here](./assets/grid/10.2%20Grid%20Placement/demo1.html) code and in style section click this arrow &rarr; of `grid-column`
 
 ```css
 .cowboy {
@@ -383,6 +386,9 @@ If you see Demo1.html code and in style section click this arrow &rarr; of `grid
   */
 }
 ```
+![image](./assets/grid/grid-span-2.png)
+
+As you see we can use `grid-row-start` instead of `column` for row span.
 
 we can use `order: <numberValue>`
 
@@ -392,7 +398,7 @@ we can use `order: <numberValue>`
 }
 ```
 
-### Grid Exercise 2 (pending)
+### Grid Exercise 2 
 
 ### Grid Rows (pending)
 
