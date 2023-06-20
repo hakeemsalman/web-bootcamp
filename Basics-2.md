@@ -390,6 +390,8 @@ If you see Demo1.html [Click here](./assets/grid/10.2%20Grid%20Placement/demo1.h
 
 As you see we can use `grid-row-start` instead of `column` for row span.
 
+
+See Demo2.html for Order in Grid  
 we can use `order: <numberValue>`
 
 ```css
@@ -400,6 +402,14 @@ we can use `order: <numberValue>`
 
 ### Grid Exercise 2 
 
+see Exercise2.html [Click here](./assets/grid/10.2%20Grid%20Placement/exercise2.html) code
+
 ### Grid Rows (pending)
+
+![](./assets/grid/grid-span-row.png)
+![](./assets/grid/grid-area-span-row.png)
+![](./assets/grid/grid-area-1.png)
+
+
 
 ### Grid Project (pending)
