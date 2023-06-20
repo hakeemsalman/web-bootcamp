@@ -238,7 +238,9 @@ Exercise 3 : Solution
 </div>
 ```
 
-### Bootstrap Components
+## Bootstrap Components
+
+### Buttons
 
 1. Apply `SUCCESS` button in html anywhere using only bootstrap. [Click Here for Docs button](https://getbootstrap.com/docs/5.3/components/buttons/)
 
@@ -262,7 +264,7 @@ Exercise 3 : Solution
 </html>
 ```
 
-SOLUTION
+**SOLUTION**
 
 ```html
 <!DOCTYPE html>
@@ -285,3 +287,47 @@ SOLUTION
   </body>
 </html>
 ```
+
+### Navs
+
+See the Bootstrap the [docs](https://getbootstrap.com/docs/5.3/components/navbar/)
+
+Try to make the website as shown below github link using Bootstrap only.
+
+> NOTE: Try to copy code of Snippets, Examples sections from Bootstraps. 
+
+[https://appbrewery.github.io/bootstrap-components/](https://appbrewery.github.io/bootstrap-components/)
+
+> NOTE: when working on Navbar, you should add Bootstrap `css` and `js` link in html.
+
+
+SOME IMP Points:
+- How to know which css you are using in html file. Go to CDT -> at right side you'll see the `utilities.scss` somethind like that.
+- Dark Mode with Bootstrap `data-bs-theme="light"` just add this code beside where you want to change the mode (we have to use `js` button to change mode by button).
+- [Spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding) see the document.
+```
+m - for classes that set margin
+p - for classes that set padding
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL
+e - (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+Where size is one of:
+
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+(You can add more sizes by adding entries to the $spacers Sass map variable.)
+```
+
+- Bootstrap Themes
+
