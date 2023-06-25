@@ -37,6 +37,7 @@ Java vs JavaScript [Youtube video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 - Chrome -> Developer Tools -> Sources -> Snippets
 
 - New snippets -> `alert("Hello world!");` -> Run (alt + Enter) 
+- Same below line type -> `say("Hello world!");` -> Run (alt + Enter) ->  *Error* becoz `say()` is not a function
 
 - Or **you can write in seperate documnet *html* file**
 
@@ -56,3 +57,9 @@ Java vs JavaScript [Youtube video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 [https://developer.mozilla.org/en-US/docs/Web/API/Window/alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
 
 
+> window.alert() instructs the browser to display a dialog with an optional message, and to wait until the user dismisses the dialog.
+
+![js-alert.png](./assets/JS/js-alert.png)
+
+- You can use both single quote (`' '`) or double quore (`" "`) but most programmers PREFER `Double Quotes`.
+ 
