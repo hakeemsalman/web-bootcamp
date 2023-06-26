@@ -63,3 +63,107 @@ Java vs JavaScript [Youtube video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
 - You can use both single quote (`' '`) or double quore (`" "`) but most programmers PREFER `Double Quotes`.
  
+
+## 2 Data Types
+
+- String - "Hello"
+- Number - 123
+- Boolean - true false
+
+> `typeof("Hello World!")`  ---> String  `typeof(341)`  ---> number
+
+## Variables
+
+`prompt()` ---> is similar to `alert()` function but `prompt()` ask input from the user.
+
+> variables is memory that store information
+
+```js
+var myName = "Salman";
+
+// output
+/*
+    myName; --> Salman
+*/
+```
+
+```js
+var myName = "Salman";
+myName = "Shaik";
+// output
+/*
+    myName; --> Shaik (because value is overwritten with new value and old is deleted).
+*/
+```
+
+```js
+var myName = "Salman";
+var yourName = prompt("What is your name?");
+
+// output
+/*
+    myName; --> Shaik (because value is overwritten with new value and old is deleted).
+*/
+```
+
+### Concatenate
+
+we are using plus operator `+` to join both string
+
+```js
+alert("Hi " + myName);
+```
+
+### Exercise 1
+
+Given the existing code below, can you write some code so that their values are switched around?
+
+`var a = "3";`  
+`var b = "8";`
+So that the variable a holds the value "8".
+And the variable b holds the value "3".
+When the code is run, it should output:
+`a is 8`  
+`b is 3`  
+Do NOT change any of the existing code.
+You are NOT allowed to type any numbers.
+You should NOT redeclare the variables a and b.
+Hint: The solution is just 3 lines of code.
+```js
+function test() {
+    var a = "3";
+    var b = "8";
+    
+/***********Do not change the code above 👆*******/
+//Write your code on lines 7 - 9:
+    
+/***********Do not change the code below 👇*******/
+
+    console.log("a is " + a);
+    console.log("b is " + b);
+}
+```
+
+***SOLUTION***
+```js
+var temp = a;
+a = b;
+b = temp;
+```
+
+## Naming Conventions
+
+Google search 
+
+- camelCase
+- No space
+- No number at starting a word
+
+
+## Strings
+
+` "a" + "b"` --> ` "ab" `
+
+
+
+
