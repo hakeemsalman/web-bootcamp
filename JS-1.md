@@ -218,5 +218,10 @@ alert("You entered " + tweet.slice(0, 140));
 
 ```js
 var name = "Salman";
-name = name.toUpperCase();
+name = name.toUpperCase(); // SALMAN
+// name.toLowerCase(); // salman
 ```
+
+### Exercise
+
+when 
