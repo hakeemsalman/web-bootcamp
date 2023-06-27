@@ -294,8 +294,197 @@ y--; // y = y - 1; //4
 
 ```
 
-## Assignment
+## Assignment Operator
+
+ Assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+
+## Functions
+
+[Functions MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+Practice functions in this website [https://stanford.edu/~cpiech/karel/ide.html](https://stanford.edu/~cpiech/karel/ide.html)
+
+> Creating function to give instruction a robot to buy a bottle from Home to Shop
 
 ```js
+function getMilk(){ // creating a function
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy bottle of the milk from shop");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+getMilk(); // calling a function
+```
+## Functions Argument
+
+```js
+// creating a function
+function getMilk(bottels){
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy "+ bottles +" bottle of the milk from shop");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+getMilk(2); // calling a function with 2 bottles parameters
 
 ```
+
+### Exercise
+
+```js
+// creating a function
+function getMilk(money){
+var pri = Math.floor(money / 1.5); // Math.floor() --> it rounds to least value
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy "+ pri/1.5 +" bottle of the milk from shop");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+getMilk(5); // calling a function with 2 bottles parameters
+
+```
+
+### Exercise
+
+
+
+```js
+function lifeInWeeks(age) {
+    
+/************Don't change the code above************/    
+    
+    //Write your code here.
+    var yearsLeft = 90 - age;
+    console.log("You have "+ yearsLeft*365 +" days, "+ yearsLeft*52+" weeks, and "+yearsLeft*12+ " months left");
+    
+    
+    
+    
+/*************Don't change the code below**********/
+}
+
+lifeInWeeks(56);
+```
+
+
+## Return a function
+
+So in this function if we gave an input of $4 and each bottle of milk cost $1.5 then the robot will
+buy 2 bottles of milk which will cost $3 and it'll give us $1 change. And that $1 of
+change is the output from this function which we can bind to a variable called change.
+
+```js
+function getMilk(money){
+var pri = Math.floor(money / 1.5); // Math.floor() --> it rounds to least value
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+
+  console.log("buy "+ calBottles(pri, 1.5 )+" bottle of the milk from shop");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return pri% 1.5;
+}
+
+var change = getMilk(5);
+
+function calBottles(startingMoney, costPerBottle){
+  return Math.floor(startingMoney/costPerBottle);
+}
+```
+
+### Exercise 
+
+BMI Calculator Challenge
+Create a BMI calculator using JavaScript functions. 
+
+The Body Mass Index (BMI) is a way of estimating the amount of body fat. It's used in medicine to calculate risk of heart disease.
+
+You can calculate it using the formula below, where weight divided by height squared.
+
+Your challenge is to create a function that takes weight and height as inputs and gives the calculated BMI value as an output. The output should be rounded to the nearest whole number.
+
+The first parameter should be the weight and the second should be the height.
+
+NOTE: You do not need to write any alerts or prompts or console logs. Your code should only contain the function, the result has to be returned by the function. You do not need to call the function.
+
+```js
+function bmiCalculator(weight,height){
+    return Math.round(weight/(height*height));
+}
+/*
+    But here instead of height*height, you can write Math.pow()
+*/
+```
+
+`𝙼𝚊𝚝𝚑.𝚙ow(x,y)` = x<sup>y</sup>  
+[Math.pow()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow)
+
+`Math.round()`
+
+---
+---
+---
+
+
