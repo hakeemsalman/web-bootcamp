@@ -224,4 +224,78 @@ name = name.toUpperCase(); // SALMAN
 
 ### Exercise
 
-when 
+Write a program To prompt a user to type his/her name then show his/her name on alert with First capital letter and remaining small case  
+**Example**  
+promt -> salman / SALMAN / Salman / sALMAN   
+alert -> Salman
+
+**SOLUTION**
+```js
+var promptValue = prompt("What's your name?");
+var firstLetter = promptValue.slice(0,1);
+firstLetter = firstLetter.toUpperCase();
+var remainingLetter = promptValue.slice(1,promptValue.length);
+remainingLetter = remainingLetter.toLowerCase();
+
+alert("hello, "+firstLetter+remainingLetter);
+```
+## Numbers
+
+```js
+var addition = 2 + 2; // 4
+var sub = 4 - 2; // 2
+var multi = 2 * 3; // 6
+var division = 12 / 3; // 4
+var modulo = 12 % 5; // 2 
+```
+
+## Precedence
+
+1. Grouping: `()` (parentheses)
+2. Member access: `.` (dot notation)
+3. Computed member access: `[]` (bracket notation)
+4. Function invocation: `()` (parentheses)
+5. Postfix increment/decrement: `++` and `--`
+6. Unary operators: `+` (unary plus), `-` (unary minus), `!` (logical NOT), `typeof`, `void`, `delete`, `await`, and `new`
+7. Exponentiation: `**`
+8. Multiplication, division, and remainder: `*`, `/`, and `%`
+9. Addition and subtraction: `+` and `-`
+10. Bitwise shift: `<<`, `>>,` and `>>>`
+11. Relational and comparison: `<`, `>`, `<=`, `>=`, `in`, `instanceof`, and `instanceof`
+12. Equality: `==`, `!=`, `===`, and `!==`
+13. Bitwise AND: `&`
+14. Bitwise XOR: `^`
+15. Bitwise OR: `|`
+16. Logical AND: `&&`
+17. Logical OR: `||`
+18. Conditional (ternary) operator: `? : `
+19. Assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `>>>=`, `&=`, `^=`, `|=`, `**=`
+20. Comma operator: `,`
+It's important to note that parentheses can be used to override the default precedence and explicitly define the order of evaluation.
+
+
+### Exercise
+
+Dog age to Human age formula
+```js
+var dogAge = prompt("What is your dog age?");
+var humanAge = ((dogAge - 2) * 4) + 21;
+alert(humanAge);
+```
+
+## Postfix increment/decrement
+
+```js
+var x = 5;
+x++; // x = x + 1; // 6
+
+var y = 5;
+y--; // y = y - 1; //4
+
+```
+
+## Assignment
+
+```js
+
+```
