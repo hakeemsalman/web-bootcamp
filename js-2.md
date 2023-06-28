@@ -217,3 +217,13 @@ function whosPaying(names) {
 whosPaying(["Angela","Salman","Sallu","Khan","Pathan"]);
 ```
 
+# Control Statements
+
+## While loop
+
+```js
+while(something is true){
+    // do something
+}
+```
+
