@@ -37,16 +37,15 @@ Here we added `script` tag in html, interpreter reads `html` from top to bottom,
     <title>Document</title>
   </head>
   <body>
-
-      <script>
+    <script>
       alert("Hello world!");
     </script>
 
     <h1>Hello World!</h1>
-  
   </body>
 </html>
 ```
+
 ## External script
 
 It is recommended to add `script` at last **bottom** of line in html, inside `body` tag.
@@ -72,9 +71,75 @@ Try to experiment with `scritp` tag placing at top and middle in `html body`.
 // index.js
 
 document.querySelector("h1").innerHTML = "Good bye!";
-
 ```
 
 ## Introduction to the Document Object Model (DOM)
 
-HTML tree generator -  tree visualizer
+HTML tree generator - tree visualizer
+
+![DOM code](./assets/JS/DOM/DOM-example.png)
+![DOM tree](./assets/JS/DOM/DOM-tree.png)
+
+DOM - Document Object Model is ... search in google
+
+Try below codes in console, each seperately
+
+```js
+document; // all html elements
+
+document.firstElementChild; // html and all inside element
+
+document.firstElementChild.firstElementChild; // only head element and it's inside element
+
+document.firstElementChild.lastElementChild; // only body element will appear
+
+document.firstElementChild.lastElementChild.firstElementChild; // h1
+
+// now we save this element in variable
+
+var heading = document.firstElementChild.lastElementChild.firstElementChild;
+
+heading.innerHTML = "Good Bye!";
+
+heading.style.color = "red";
+
+// if you have input checkbox and it is unchecked then you can use below code to check
+
+document.querySelector("input").click();
+```
+
+Let's say suppose `input` element how it checks with out clicking on that, by just writing one line of code.
+
+Objects inside the DOM can have,
+
+1. Properties - it describes the something about the object
+2. Methods - it describes the object can do
+
+![car object](./assets/JS/DOM/car-example.png)
+
+Here we can get color of car like,
+
+```js
+car.color; //red
+```
+
+This is called `get property`.
+---
+To assign value
+```js
+car.numberOfDoors = 0; // assign 0 doors to the car
+```
+THis is called `set property`.
+---
+To drive a car or to take action on car
+```js
+car.drive();
+```
+
+> NOTE: To use all these functions and methods, we have to use `dot notation` ` . `  that should be an `Object`. means we can't use in `array`, it works only on `Objects`.
+
+
+## Selecting HTML Elements with Javascript
+
+
+
