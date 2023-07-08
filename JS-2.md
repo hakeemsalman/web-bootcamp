@@ -254,5 +254,70 @@ function fizzBuzz() {
 ```
 
 ### Exercise
+```js
+var numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+```
 
+
+## for Loop
+```js
+    //start   end    change
+for (  i=0  ; i<2  ;   i++  ){
+  //do something
+}
+```
+```js
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+  for (var count = 1; count <= 100; count++) {
+    if (count % 5 == 0 && count % 3 == 0) {
+      output.push(" FizzBuzz");
+    } else if (count % 5 == 0) {
+      output.push("Buzz");
+    } else if (count % 3 == 0) {
+      output.push("Fizz");
+    } else {
+      output.push(count);
+    }
+  }
+  console.log(output);
+}
+```
+
+> While is used in state condition and for loop is used in iterate condition
+
+## Introducing the Fibonacci Code Challenge
+
+![fibo](./assets/JS/fibo-chart.png)
+
+```js
+function fibo(last){
+   var array = [];
+   if(last == 1){
+         array = [0];
+      }else if(last == 2){
+        array = [0,1];
+      } else{
+         array = [0,1];
+         for(var i = 2;i<last;i++){
+            array.push(array[array.length-2]+array[array.length-1]);
+      }
+   }
+   return array;
+}
+
+```
 
