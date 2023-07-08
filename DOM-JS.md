@@ -75,6 +75,26 @@ document.querySelector("h1").innerHTML = "Good bye!";
 
 ## Introduction to the Document Object Model (DOM)
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <input type="checkbox" name="" id=""> <button>click me</button>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+</body>
+</html>
+```
+
 HTML tree generator - tree visualizer
 
 ![DOM code](./assets/JS/DOM/DOM-example.png)
@@ -141,5 +161,16 @@ car.drive();
 
 ## Selecting HTML Elements with Javascript
 
+1. document.getElementsByTagName
+2. document.getElementsByClassName
+```js
+document.getElementsByTagName("li"); 
+/* list of li elements in array
+["0": {},"1": {},"2": {}]
+*/
 
+document.getElementsByTagName("li").style.color = "purple";  // error because it's an array
+
+document.getElementsByTagName("li")[2].styel.color = "purple"; // worked
+```
 
