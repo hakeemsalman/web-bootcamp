@@ -216,3 +216,54 @@ document.querySelectorAll("#list .item")[2].styel.color = "red";
 ## Manipulating and Changing Styles of HTML Elements with Javascript
 
 DOM object style property from w3schools
+
+```js
+document.querySelector("button").classList; // return all classes list which is using by button
+
+document.querySelector("button").classList.add("invisible"); // add invisible class name in the button tag
+
+document.querySelector("button").classList.remove("invisible"); //remove  invisible class name in the button tag
+
+document.querySelector("button").classList.toggle("invisible"); // before this invisible tag is removed, so toggle add class in button and do vice versa. If it is true changed to false or if it is false then it changed to true 
+
+
+```
+
+## Text Manipulation and the Text Content Property
+
+```HTML
+<body>
+    <h1>Hello</h1>
+    <h2><strong>World!</strong></h2>
+</body>  
+```
+
+```js
+document.querySelector("h1").innerHTML; // Hello
+document.querySelector("h2").innerHTML; // <strong>World!</strong>
+
+document.querySelector("h1").textContent; // Hello
+document.querySelector("h2").textContent; // World!
+
+```
+
+## Manipulating HTML Element Attributes
+
+```html
+<body>
+    <h1>Hello</h1>
+    <h2><strong>World!</strong></h2>
+    <a href="www.google.com">Google</a>
+</body>
+```
+
+```js
+document.querySelector("a"); //  <a href="www.google.com">Google</a>
+
+document.querySelector("a").attributes; // list all attributes of anchor tag
+
+document.querySelector("a").getAttribute("href"); // www.google.com
+
+document.querySelector("a").setAttribute("href","www.bing.com"); // setAttributes needs two parameters (attribute, value)
+
+```
