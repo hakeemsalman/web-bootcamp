@@ -207,6 +207,11 @@ Hint
 **SOLUTION**
 
 ```js
+// Range in random number
+ Math.floor(Math.random() * (max - min + 1) + min)
+```
+
+```js
 function whosPaying(names) {
   /******Don't change the code above*******/
 
