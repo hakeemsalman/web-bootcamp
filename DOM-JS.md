@@ -163,6 +163,7 @@ car.drive();
 
 1. document.getElementsByTagName
 2. document.getElementsByClassName
+3. document.getElementById
 ```js
 document.getElementsByTagName("li"); 
 /* list of li elements in array
@@ -172,5 +173,46 @@ document.getElementsByTagName("li");
 document.getElementsByTagName("li").style.color = "purple";  // error because it's an array
 
 document.getElementsByTagName("li")[2].styel.color = "purple"; // worked
+
+document.getElementsByTagName("li").length; // 3
 ```
 
+```js
+ document.getElementsByClassName("btn"); // html collection
+
+ document.getElementsByClassName("btn").styel.color = "red"; // error
+
+ document.getElementsByClassName("btn")[0].styel.color = "red"; // worked
+```
+
+
+```js
+document.getElementById("title");
+
+document.getElementById("title").innerHTML = "Good Bye";
+
+
+document.querySelector(); // select selector from css selector 
+
+document.querySelector("h1"); // <h1>Hello</h1> 
+
+document.querySelector("#title");  // <h1>Hello</h1> 
+
+document.querySelector(".btn");
+
+document.querySelector("li a"); // hierarchical selector query the selector where list has anchor tag 
+
+document.querySelector("li.item"); 
+
+document.querySelector("#list a");
+
+document.querySelector("#list .item"); // gives only one li tag of first element 
+
+document.querySelectorAll("#list .item"); 
+
+document.querySelectorAll("#list .item")[2].styel.color = "red";
+
+```
+## Manipulating and Changing Styles of HTML Elements with Javascript
+
+DOM object style property from w3schools
