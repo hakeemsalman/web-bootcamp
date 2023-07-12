@@ -267,3 +267,38 @@ document.querySelector("a").getAttribute("href"); // www.google.com
 document.querySelector("a").setAttribute("href","www.bing.com"); // setAttributes needs two parameters (attribute, value)
 
 ```
+
+
+## Boss level Challenge 1 - The Dice game
+
+[Download this source file](./assets/DOM/Dice%20challenge%201%20-%20completed/Dicee%20Challenge%20-%20Starting%20Files.zip)
+
+Now make a working website [click here for completed site](./assets/DOM/Dice%20challenge%201%20-%20completed/dicee.html)
+
+> NOTE: Site is woriking but the code is not readable, The code SHOULD BE in readable.
+
+---
+---
+---
+
+# Advanced Javascript and DOM Manipulation
+
+1. [Event listener](#event-listeners)
+
+[Download this source file](./assets/DOM/Drum%20challenge%202%20-%20completed/Drum%20Kit%20Starting%20Files.zip)
+
+Now make a working website [click here for completed site](./assets/DOM/Drum%20challenge%202%20-%20completed/index.html)
+
+## Event listeners
+
+[MDN Event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+```js
+addEventListener(type, listener);
+```
+
+1. [type event](https://developer.mozilla.org/en-US/docs/Web/Events#event_listing)
+2. [listener]()
+
+
+
