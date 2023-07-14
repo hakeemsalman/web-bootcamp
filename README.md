@@ -6,6 +6,7 @@
 4. [JS-1](./JS-1.md)
 5. [JS-2](./JS-2.md)
 6. [DOM](./DOM-JS.md)
+7. [Jquery](./jquery/jquery-01.md)
 
 
 [Basics-1](./Basics-1.md)
