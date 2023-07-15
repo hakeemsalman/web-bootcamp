@@ -154,5 +154,67 @@ $("h1").hasClass("big-title"); // return true or false
 
 ## Manipulating Text with jQuery
 
+```html
+<body>
+    <h1>Hello world!</h1>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+</body>
+```
+
+```js
+$("h1").text("Bye"); // add text inside parathesis and .text is used for replacing the text inside the element
+
+$("button"); // list the all elemets, as above code we have 5 buttons
+
+$("button").text("Don't click me"); // change all buttons text with one line of code
+
+$("button").html("<em>Hi</em>");// html means in vanila javascript `innerHTML`
+```
+
+## Manipulating Attributes with jQuery
+
+```js
+$("img").attr("src"); // get method(only one parameter) returns the location src name of an image
+
+$("a").attr("href", "www.yahoo.com"); // set method(need 2 params) set the params
+
+$("h1").attr("class");
+```
 
 
+## Adding Event Listeners with jQuery
+
+```html
+<body>
+    <h1>Hello world!</h1>
+</body>
+```
+
+```js
+$("h1").click(function(){
+    $("h1").css("color","yellow");
+});
+```
+--
+---
+--
+How we use in vanila js for looping the button and changing is color style
+```html
+<body>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+</body>
+```
+
+```js
+$("button").click(function(){
+    $("h1").css("color","yellow");
+});
+```
