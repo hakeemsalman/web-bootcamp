@@ -713,4 +713,90 @@ function makeSound(keyPress){
 
 ## Understanding Callbacks and How to Respond to Events
 
-***pending***
+Synchronous operations are those where one task needs to complete before another one starts.
+
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+[https://developer.mozilla.org/en-US/docs/Glossary/Callback_function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+
+
+## Adding Animation to Websites
+
+Add css property when key is pressed
+
+```js
+var buttonList = document.querySelectorAll("button");
+for(var i = 0;i<buttonList.length;i++){
+    buttonList[i].addEventListener("click",function(){
+        var buttonHtml = this.innerHTML;
+        makeSound(buttonHtml);
+        buttonAnimation(buttonHtml); // <------
+    });
+}
+
+document.addEventListener("keypress",function(event){
+    makeSound(event.key);
+    buttonAnimation(even.key);  // <------
+})
+
+function makeSound(keyPress){
+        switch (keyPress) {
+            case "w":
+                var tom1 = new Audio('./sounds/tom-1.mp3');
+                tom1.play();
+                break;
+            case "a":
+                var tom2 = new Audio('./sounds/tom-2.mp3');
+                tom2.play();
+                break;
+            case "s":
+                var tom3 = new Audio('./sounds/tom-3.mp3');
+                tom3.play();
+                break;
+            case "d":
+                var tom4 = new Audio('./sounds/tom-4.mp3');
+                tom4.play();
+                break;
+
+            case "j":
+                var snare = new Audio('./sounds/snare.mp3');
+                snare.play();
+                break;
+            case "k":
+                var kick = new Audio('./sounds/kick-bass.mp3');
+                kick.play();
+                break;
+            case "l":
+                var crash = new Audio('./sounds/crash.mp3');
+                crash.play();
+                break;
+            default:
+                break;
+        }
+}
+
+
+function buttonAnimation(currentKey){  // <------
+    var activeButton = document.querySelector("."+currentKey);
+    activeButton.classList.add("pressed");
+
+    
+}
+```
+
+but when we clicked, it doesn't disappear as pressed or it does not looks like as an animation.
+
+In order to do this, we have to use `setTimeOut()` [https://developer.mozilla.org/en-US/docs/Web/API/setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+
+
+```js
+function buttonAnimation(currentKey){ // <------
+    var activeButton = document.querySelector("."+currentKey);
+    activeButton.classList.add("pressed");
+
+    setTimeout( function() {
+        activeButton.classList.remove("pressed");
+      }, 100);
+}
+
+```

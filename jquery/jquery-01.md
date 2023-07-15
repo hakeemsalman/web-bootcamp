@@ -118,4 +118,41 @@ for(var buttonList=document.querySelectorAll("button"),i=0;i<buttonList.length;i
 
 ## Selecting Elements with jQuery
 
+```js
+$("h1").css("color","green"); // set method adding green color to h1 tag
+
+$("h1").css("color"); // get method of h1 tag
+
+$("h1").css("font-size");
+```
+
+```html
+<body>
+    <h1>Hello</h1>
+</body>
+```
+```css
+.big-title{
+    color: yellow;
+    font-size: 10rem;
+    font-family: cursive;
+}
+.margin-50{
+    margin: 50px;
+}
+```
+```js
+$("h1").addClass("big-title");
+
+$("h1").addClass("big-title margin-50");  // add multiple classes
+
+$("h1").removeClass("margin-50"); // remove the class
+
+$("h1").hasClass("big-title"); // return true or false
+```
+
+
+## Manipulating Text with jQuery
+
+
 
