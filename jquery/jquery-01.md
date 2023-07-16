@@ -214,7 +214,183 @@ How we use in vanila js for looping the button and changing is color style
 ```
 
 ```js
+/*
+for(var i = 0; i < document.querySelectorAll("button").lenght; i++){
+     document.querySelectorAll("button").addEventListener("click", function(){
+         document.querySelector("h1").style.color = "yellow";
+     });
+}
+*/
+
 $("button").click(function(){
     $("h1").css("color","yellow");
 });
 ```
+
+### Exercise
+
+Write script when any keypress on keyboard that same key appear on body
+
+```html
+<body>
+    <h1>Hello world!</h1>
+</body>
+```
+```js
+$("body").keydown(function(event){
+   $("h1").text(event.key);
+})
+```
+
+
+Alternate code
+
+```js
+$("h1").on("click",function(){
+   $("h1").css("color","purple");
+});
+
+$("h1").on("mouseover",function(){
+   $("h1").css("color","purple");
+});
+
+```
+
+we can write any event in this `on` param.
+
+
+## Adding and Removing Elements with jQuery
+
+1. before()
+2. after()
+3. prepend()
+4. append()
+
+1. before()
+
+```html
+<h1>Hello</h1>
+```
+```js
+$("h1").before("<button>New</button>");
+```
+
+Output
+---
+```html
+<button>New</button><h1>Hello</h1>
+```
+
+2. after()
+
+```html
+<h1>Hello</h1>
+```
+```js
+$("h1").after("<button>New</button>");
+```
+
+Output
+---
+```html
+<h1>Hello</h1><button>New</button><
+```
+
+3. prepend()
+
+```html
+<h1>Hello</h1>
+```
+```js
+$("h1").prepend("<button>New</button>");
+```
+
+Output
+---
+```html
+<h1><button>New</button>Hello</h1>
+```
+
+
+
+4. append()
+
+```html
+<h1>Hello</h1>
+```
+```js
+$("h1").append("<button>New</button>");
+```
+
+Output
+---
+```html
+<h1>Hello<button>New</button></h1>
+```
+
+
+If you want to remove all buttons
+```js
+$("button").remove();
+```
+
+
+##  Website Animations with jQuery
+
+To hide `h1` element using `hide()` on click of button
+
+```js
+$("button").on("click",function(){
+    $("h1").hide();
+});
+```
+
+To show `h1` element using `hide()` on click of button
+
+```js
+$("button").on("click",function(){
+    $("h1").show();
+});
+```
+
+For smooth transition
+
+```js
+$("button").on("click",function(){
+    $("h1").faceOut();
+});
+```
+
+```js
+$("button").on("click",function(){
+    $("h1").faceIn();
+});
+```
+
+Opacity
+```js
+$("button").on("click",function(){
+    $("h1").animate({opacity: 0.5});
+});
+```
+0
+```js
+ $("h1").animate({margin: 20});
+
+ // in percent
+
+  $("h1").animate({margin: "20%"});
+```
+
+```js
+ $("h1").slideUp().slideDown().animate({opacity: 0.5});
+```
+
+> NOTE: Programmers don't memorize anything, just they know and understand what's going on in this. They keep free space in thier brain :grin:
+
+
+[https://www.w3schools.com/jquery/jquery_ref_effects.asp](https://www.w3schools.com/jquery/jquery_ref_effects.asp)
+
+
+## Challenge Simon Game
+
