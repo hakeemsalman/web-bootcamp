@@ -6,8 +6,11 @@
 4. [JS-1](./JS-1.md)
 5. [JS-2](./JS-2.md)
 6. [DOM](./DOM-JS.md)
-7. [Jquery](./jquery/jquery-01.md)
-
+7. [Jquery](./jquery-01.md)
+8. [Unxi command](./Unix-command.md)
+9. [Nodejs](./node-js.md)
+10. [Express js](./express-js.md)
+11. 
 
 [Basics-1](./Basics-1.md)
 # Basics 1
