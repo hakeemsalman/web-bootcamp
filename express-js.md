@@ -172,8 +172,40 @@ app.listen(port, () => {
 });
 ```
 
+# Introduction to Middlewares
 
+Google search what is middle ware is nodejs or expressjs
 
+```html
+<form action="/login" method="POST">
+  <label for="email">Email</label><br>
+  <input type="text" id="fname" name="email" required><br>
+  <label for="password">Password</label><br>
+  <input type="text" name="password" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+```
+
+The above code is used as Sign in Form in html
+
+```
+/Folder
+│   index1.js
+│   index2.js
+│   index3.js
+│   index4.js
+│   package-lock.json
+│   package.json
+│   solution1.js
+│   solution2.js
+│   solution3.js
+│   solution4.js
+│
+└───public
+        index.html
+```
+
+Here in `public` folder is available, where `index.html` and other static files could be there like `style.css`, `images.png` and other static files.
 
 
 
