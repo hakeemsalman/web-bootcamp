@@ -205,9 +205,32 @@ The above code is used as Sign in Form in html
         index.html
 ```
 
-Here in `public` folder is available, where `index.html` and other static files could be there like `style.css`, `images.png` and other static files.
+Here in `public` folder is available, where `index.html` and other static files could be there like `style.css`, `images.png` and other things that are not going to change.
+
+```js
+import express from "express";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const app = express();
+const port = 3000;
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+```
+[res.sendFile link](https://expressjs.com/en/4x/api.html#res.sendFile)
+
+`__dirname` returns the file path.
 
 
+We use `body parser` package in node js for **Middle ware** in expressjs
 
 
 
