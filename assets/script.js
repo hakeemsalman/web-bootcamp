@@ -5,8 +5,7 @@ function mark() {
     count++;
 
     var dataToSend = {
-      username: "shaik.salman@accellor.com",
-      password: "Aamkarass1998$$$",
+     
       grant_type: "password",
       loginType: "1",
     };
