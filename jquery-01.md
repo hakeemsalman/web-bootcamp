@@ -6,7 +6,7 @@ To add html jQuery script, just to this [link](https://developers.google.com/spe
 
 `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>`
 
-jQuery should be like shown below. Add this script to bottom of body html and above top to the your custom own script
+jQuery should be like shown below. Add jQuery script to bottom of body html or top to the your custom own script
 
 ```html
 <body>
