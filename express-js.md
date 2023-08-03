@@ -176,6 +176,12 @@ app.listen(port, () => {
 
 Google search what is middle ware is nodejs or expressjs
 
+## Types of Middelware
+1. Pre-process
+2. Logging
+3. Authentication
+4. 
+
 ```html
 <form action="/login" method="POST">
   <label for="email">Email</label><br>
