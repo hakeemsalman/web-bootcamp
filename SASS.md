@@ -14,9 +14,9 @@ Sass consists of two syntaxes.
 3. Write a command to watch sass `sass --watch input.scss output.css`.
 
 ## Sass features
-1. [Variables](#-variables)
-2. [Nesting](#-nesting)
-3. [Partials](#-partials)
+1. [Variables](#variables)
+2. [Nesting](#nesting)
+3. [Modules & Partials](#partials)
 
 ### Variables
 Variables are used to store the values and use it anytime and everywhere.
@@ -87,3 +87,29 @@ body a {
 ```
 
 ### Partials
+1. Partial Sass files that contain little snippets of CSS that you can include in other Sass files.
+2. Underscore `_` should be denoted before first letter when you create partial files.
+3. Use `@use` to import `*.scss` file. <p style="color: red;">*If @use is NOT working try with @import rule.*</p>
+4. This rule loads another Sass file as a *`module`*
+
+```scss
+// _variables.scss 
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+
+// section.scss
+@use "./_variables.scss";
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+```css
+/* CSS */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+```
