@@ -174,7 +174,7 @@ app.listen(port, () => {
 
 # Introduction to Middlewares
 
-Google search what is middle ware is nodejs or expressjs
+Google search what is middle ware in nodejs or expressjs
 
 ## Types of Middelware
 1. Pre-process
@@ -222,12 +222,13 @@ Here in `public` folder is available, where `index.html` and other static files 
 import express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url)); // mac: user/etc/var/home/desktop/.... or windows: C:/User/John/Destop/...
 
 const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
+  console.log(__dirname + "/public/index.html"); // user/etc/var/home/desktop/  remove when development
   res.sendFile(__dirname + "/public/index.html");
 });
 
@@ -240,10 +241,72 @@ app.listen(port, () => {
 
 `__dirname` returns the file path.
 
+#### Body parser - Middle ware
 
-We use `body parser` package in node js for **Middle ware** in expressjs
+- We use `body parser` package in node js for **Middle ware** in expressjs
+- Order of code is *important* in express js.
 
+1. Install middle-ware `npm i body-parser`
+1. Import `body-parser` in code.
 
+```js
+import express from "express";
+import bodyParser from "body-parser"; // body-parser
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url)); // mac: user/etc/var/home/desktop/.... or windows: C:/User/John/Destop/...
 
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: true}));
+
+app.get("/", (req, res) => {
+  console.log(__dirname + "/public/index.html"); // user/etc/var/home/desktop/  remove when development
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+})
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+```
+
+## Custom Middleware
+
+1. `app.use()` this method should be before the `app.get` method. 
+1. `next()` is should be placed at the end of the code.
+
+```js
+import express from "express";
+
+const app = express();
+const port = 3000;
+
+function logger(req, res, next){
+  console.log("Request Method:", req.Method);
+  console.log("Request URL:", req.url);
+  next();
+}
+
+app.use(logger);
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+})
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+```
 
 
